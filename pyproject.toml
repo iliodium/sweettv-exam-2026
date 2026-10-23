@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sweettv-exam-2026"
+version = "0.1.0"
+description = "Temporal TV programme recommendation with train-only content, implicit ALS and co-view PageRank"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "numpy==2.5.4",
+  "scipy==1.18.1",
+  "scikit-learn==1.9.1",
+  "implicit==0.7.3",
+  "duckdb==1.5.6",
+  "pandas==2.3.3",
+  "pyarrow==23.0.1",
+  "threadpoolctl==3.7.0",
+]
+
+[project.urls]
+Repository = "https://github.com/iliodium/sweettv-exam-2026"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["sweettv*"]

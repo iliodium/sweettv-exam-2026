@@ -1,0 +1,23 @@
+{
+  "scope": "updated actual ALS score arrays; AI-run audit, not personal student verification",
+  "score_shape": [
+    1260,
+    9671
+  ],
+  "warm_users": 1247,
+  "cold_users": 13,
+  "positive_threshold_audit": {
+    "val": {
+      "candidate_count": 3957,
+      "minimum_warm_fifth_highest": 0.028494782745838165,
+      "warm_users_fewer_than_five_positive_scores": 0,
+      "score_positive_counts_min": 762
+    },
+    "test": {
+      "candidate_count": 6632,
+      "minimum_warm_fifth_highest": 0.028494782745838165,
+      "warm_users_fewer_than_five_positive_scores": 0,
+      "score_positive_counts_min": 1063
+    }
+  }
+}

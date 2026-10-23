@@ -1,0 +1,217 @@
+{
+  "view_log": [
+    {
+      "n_rows": 5821987,
+      "users": 4914,
+      "channels": 202,
+      "start_min": "2020-03-09 00:00:02",
+      "stop_max": "2020-07-26 23:59:58",
+      "duration_min": 61,
+      "duration_quantiles": [
+        80.0,
+        396.0,
+        3911.0,
+        14079.139999999665
+      ],
+      "duration_max": 342145,
+      "invalid_intervals": 0,
+      "declared_duration_mismatch": 117
+    }
+  ],
+  "schedules": [
+    {
+      "source_part": 0,
+      "n_rows": 1074235,
+      "channels": 400,
+      "programmes": 5847,
+      "labelled_rows": 115613,
+      "unlabelled_rows": 958622,
+      "start_min": "2020-03-08 23:00:00",
+      "end_max": "2020-05-18 12:00:00",
+      "duration_quantiles": [
+        300.0,
+        1500.0,
+        5400.0,
+        12600.0
+      ],
+      "invalid_duration": 1
+    },
+    {
+      "source_part": 1,
+      "n_rows": 1074394,
+      "channels": 403,
+      "programmes": 6363,
+      "labelled_rows": 121505,
+      "unlabelled_rows": 952889,
+      "start_min": "2020-05-18 00:00:00",
+      "end_max": "2020-07-27 12:00:00",
+      "duration_quantiles": [
+        300.0,
+        1500.0,
+        5400.0,
+        13200.0
+      ],
+      "invalid_duration": 0
+    },
+    {
+      "source_part": 2,
+      "n_rows": 1295378,
+      "channels": 404,
+      "programmes": 6636,
+      "labelled_rows": 144774,
+      "unlabelled_rows": 1150604,
+      "start_min": "2020-07-27 00:00:00",
+      "end_max": "2020-10-19 12:00:00",
+      "duration_quantiles": [
+        300.0,
+        1500.0,
+        5400.0,
+        13500.0
+      ],
+      "invalid_duration": 0
+    }
+  ],
+  "airings": [
+    {
+      "source_part": 0,
+      "distinct_labelled_airings": 115613,
+      "start_min": "2020-03-08 23:00:00",
+      "end_max": "2020-05-18 10:00:00"
+    },
+    {
+      "source_part": 1,
+      "distinct_labelled_airings": 121505,
+      "start_min": "2020-05-18 00:00:00",
+      "end_max": "2020-07-27 08:15:00"
+    },
+    {
+      "source_part": 2,
+      "distinct_labelled_airings": 144774,
+      "start_min": "2020-07-27 00:00:00",
+      "end_max": "2020-10-19 10:10:00"
+    }
+  ],
+  "weekly_views": [
+    {
+      "week_id": "2020-11",
+      "n_rows": 407493,
+      "users": 4697
+    },
+    {
+      "week_id": "2020-12",
+      "n_rows": 452314,
+      "users": 4721
+    },
+    {
+      "week_id": "2020-13",
+      "n_rows": 465318,
+      "users": 4689
+    },
+    {
+      "week_id": "2020-14",
+      "n_rows": 428820,
+      "users": 4666
+    },
+    {
+      "week_id": "2020-15",
+      "n_rows": 412698,
+      "users": 4658
+    },
+    {
+      "week_id": "2020-16",
+      "n_rows": 406317,
+      "users": 4682
+    },
+    {
+      "week_id": "2020-17",
+      "n_rows": 417854,
+      "users": 4638
+    },
+    {
+      "week_id": "2020-18",
+      "n_rows": 385637,
+      "users": 4599
+    },
+    {
+      "week_id": "2020-19",
+      "n_rows": 336042,
+      "users": 4606
+    },
+    {
+      "week_id": "2020-20",
+      "n_rows": 232680,
+      "users": 4220
+    },
+    {
+      "week_id": "2020-21",
+      "n_rows": 182044,
+      "users": 3572
+    },
+    {
+      "week_id": "2020-22",
+      "n_rows": 192998,
+      "users": 3562
+    },
+    {
+      "week_id": "2020-23",
+      "n_rows": 162882,
+      "users": 3440
+    },
+    {
+      "week_id": "2020-24",
+      "n_rows": 156928,
+      "users": 3252
+    },
+    {
+      "week_id": "2020-25",
+      "n_rows": 138807,
+      "users": 3108
+    },
+    {
+      "week_id": "2020-26",
+      "n_rows": 126940,
+      "users": 2406
+    },
+    {
+      "week_id": "2020-27",
+      "n_rows": 105223,
+      "users": 4275
+    },
+    {
+      "week_id": "2020-28",
+      "n_rows": 271172,
+      "users": 4620
+    },
+    {
+      "week_id": "2020-29",
+      "n_rows": 261698,
+      "users": 4620
+    },
+    {
+      "week_id": "2020-30",
+      "n_rows": 278122,
+      "users": 4565
+    }
+  ],
+  "channel_mapping": [
+    {
+      "channels_in_views": 202,
+      "channels_with_schedule": 197
+    }
+  ],
+  "ambiguous_start": [
+    {
+      "conflicting_channel_start": 0
+    }
+  ],
+  "template": {
+    "rows": 1260,
+    "columns": [
+      "user_id",
+      "tv_show_id"
+    ],
+    "user_ids_preserved_as_strings": true
+  },
+  "seconds": 0.9893819172866642,
+  "duckdb_version": "1.5.6"
+}

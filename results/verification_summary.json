@@ -1,0 +1,220 @@
+{
+  "scope": "AI-run independent checks; not a claim of student personal execution",
+  "interval_sample_cases": 33,
+  "interval_all_pass": true,
+  "complete_parquet_checks": {
+    "airing_watch.parquet": {
+      "rows": 3011313,
+      "invalid_id": 0,
+      "invalid_duration": 0,
+      "impossible_seconds": 0,
+      "impossible_coverage": 0,
+      "train_rows": 2432657,
+      "train_temporal_violations": 0,
+      "val_rows": 578656,
+      "val_temporal_violations": 0,
+      "max_coverage_formula_difference": 0.0
+    },
+    "events.parquet": {
+      "rows": 611713,
+      "invalid_id": 0,
+      "invalid_duration": 0,
+      "impossible_seconds": 0,
+      "impossible_coverage": 0,
+      "below_positive_threshold": 0,
+      "train_rows": 461409,
+      "train_temporal_violations": 0,
+      "val_rows": 150304,
+      "val_temporal_violations": 0,
+      "max_coverage_formula_difference": 0.0
+    }
+  },
+  "independent_candidates": {
+    "train": 7462,
+    "val": 3957,
+    "test": 6632
+  },
+  "experiment_all_pass": true,
+  "experiment_check_groups": 13,
+  "experiment_runs_verified": 37,
+  "max_map_error": 5.551115123125783e-17,
+  "metric_synthetic_tests": {
+    "scope": "Independent synthetic mathematical/validation tests; no competition submission generated",
+    "tests_run": 12,
+    "failures": 0,
+    "errors": 0,
+    "all_pass": true,
+    "rational_oracle_sequences": 15360,
+    "fixture_ap": [
+      0.9166666666666666,
+      0.5333333333333333
+    ],
+    "map_fixture": 0.725
+  },
+  "model_synthetic_tests": {
+    "scope": "AI-run synthetic correctness tests; not a student personal check or SWEET.TV result",
+    "tests_run": 12,
+    "failures": 0,
+    "errors": 0,
+    "successful": true,
+    "seconds": 0.06916729174554348,
+    "versions": {
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "sklearn": "1.9.1",
+      "implicit": "0.7.3"
+    },
+    "models_sha256": "cdefe1b7810bc9af0862a28fff4c6b17c851f7ad62bb14c9124d9753cf375c12",
+    "failure_details": []
+  },
+  "extension_audit": {
+    "all_pass": true,
+    "scope": "No root metric/model/ranking helper imported. Counter ground truth, Fraction AP, independently reconstructed airing-count supply and cached-score re-ranking; no refit.",
+    "records": [
+      {
+        "key": "history_supply_g0_0",
+        "independent_map": 0.33118192616959063,
+        "reported_map": 0.33118192616959063,
+        "map_abs_difference": 0.0,
+        "independent_precision": 0.38223684210526315,
+        "independent_recall": 0.39876644736842104,
+        "diagnostic_difference_max": 5.551115123125783e-17,
+        "csv_valid": true,
+        "csv_sha256": "f240ad35e832c8ac1fa5e3787daca59f1a7ff1fbe1147e859d7165ee765c6077",
+        "ranked_lists_valid": true,
+        "independent_formula_and_reranking_matches": {
+          "val": true,
+          "test": true
+        },
+        "multiplier_summary_matches": true,
+        "fallback_counts_match": true,
+        "gamma_zero_base_lists_equal": {
+          "val": true,
+          "test": true
+        },
+        "all1260_zero_empty_map": 0.3196168430335097
+      },
+      {
+        "key": "history_supply_g0_5",
+        "independent_map": 0.32757903874269007,
+        "reported_map": 0.32757903874269007,
+        "map_abs_difference": 0.0,
+        "independent_precision": 0.3748355263157895,
+        "independent_recall": 0.38959703947368424,
+        "diagnostic_difference_max": 0.0,
+        "csv_valid": true,
+        "csv_sha256": "f913eaac9c372e830a826c4699ea9187732dfd92c59a4d0902ada7ab20242583",
+        "ranked_lists_valid": true,
+        "independent_formula_and_reranking_matches": {
+          "val": true,
+          "test": true
+        },
+        "multiplier_summary_matches": true,
+        "fallback_counts_match": true,
+        "gamma_zero_base_lists_equal": {},
+        "all1260_zero_empty_map": 0.31613977072310406
+      },
+      {
+        "key": "history_supply_g1_0",
+        "independent_map": 0.31999817251461987,
+        "reported_map": 0.3199981725146199,
+        "map_abs_difference": 5.551115123125783e-17,
+        "independent_precision": 0.3680921052631579,
+        "independent_recall": 0.38236019736842103,
+        "diagnostic_difference_max": 0.0,
+        "csv_valid": true,
+        "csv_sha256": "b7eebab60b2a564ac1f08ca52313a6b487e1d10d03aa5e841cec3554a8548617",
+        "ranked_lists_valid": true,
+        "independent_formula_and_reranking_matches": {
+          "val": true,
+          "test": true
+        },
+        "multiplier_summary_matches": true,
+        "fallback_counts_match": true,
+        "gamma_zero_base_lists_equal": {},
+        "all1260_zero_empty_map": 0.3088236331569665
+      },
+      {
+        "key": "ppr_supply_g0_0",
+        "independent_map": 0.33761810124269004,
+        "reported_map": 0.33761810124269004,
+        "map_abs_difference": 0.0,
+        "independent_precision": 0.39013157894736844,
+        "independent_recall": 0.4069353070175439,
+        "diagnostic_difference_max": 5.551115123125783e-17,
+        "csv_valid": true,
+        "csv_sha256": "9a3dc03319e30285431b572d3e362b6d94356193a810896dc06b2774bd8c3b73",
+        "ranked_lists_valid": true,
+        "independent_formula_and_reranking_matches": {
+          "val": true,
+          "test": true
+        },
+        "multiplier_summary_matches": true,
+        "fallback_counts_match": true,
+        "gamma_zero_base_lists_equal": {
+          "val": true,
+          "test": true
+        },
+        "all1260_zero_empty_map": 0.3258282627865961
+      },
+      {
+        "key": "ppr_supply_g0_5",
+        "independent_map": 0.3375324378654971,
+        "reported_map": 0.3375324378654971,
+        "map_abs_difference": 0.0,
+        "independent_precision": 0.38651315789473684,
+        "independent_recall": 0.40230263157894736,
+        "diagnostic_difference_max": 0.0,
+        "csv_valid": true,
+        "csv_sha256": "cb06c98935286269feaa897b9d596a983443204fc4886e92948392926017496e",
+        "ranked_lists_valid": true,
+        "independent_formula_and_reranking_matches": {
+          "val": true,
+          "test": true
+        },
+        "multiplier_summary_matches": true,
+        "fallback_counts_match": true,
+        "gamma_zero_base_lists_equal": {},
+        "all1260_zero_empty_map": 0.3257455908289242
+      },
+      {
+        "key": "ppr_supply_g1_0",
+        "independent_map": 0.32734900402046785,
+        "reported_map": 0.32734900402046785,
+        "map_abs_difference": 0.0,
+        "independent_precision": 0.37664473684210525,
+        "independent_recall": 0.3909128289473684,
+        "diagnostic_difference_max": 5.551115123125783e-17,
+        "csv_valid": true,
+        "csv_sha256": "7084648e83921bdd2b32804d7a50cf4579613b826599ba260c1393d2224196e0",
+        "ranked_lists_valid": true,
+        "independent_formula_and_reranking_matches": {
+          "val": true,
+          "test": true
+        },
+        "multiplier_summary_matches": true,
+        "fallback_counts_match": true,
+        "gamma_zero_base_lists_equal": {},
+        "all1260_zero_empty_map": 0.31591776895943563
+      }
+    ],
+    "supply_sha256_match": true,
+    "supply_counts": {
+      "train": 187440,
+      "val": 49317,
+      "test": 144517
+    },
+    "extension_best": "ppr_supply_g0_0",
+    "primary_validation_selected": "rrf_13",
+    "primary_selected_map": 0.3483872441520468,
+    "all_extension_settings_below_primary": true,
+    "limitations": [
+      "Original history/PPR fits are reused as frozen inputs, not retrained.",
+      "Private Kaggle scores/hidden labels are not inputs to this audit."
+    ]
+  },
+  "raw_interval_limitations": [
+    "Raw overlap reconstruction covers the selected cases, not every user-airing. Complete parquet checks cover all exported interactions but cannot alone prove all raw joins exhaustive.",
+    "Ground-truth top-five frequency and model-level train-only fitting require separate experiment audit."
+  ]
+}

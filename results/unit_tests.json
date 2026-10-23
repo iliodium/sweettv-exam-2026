@@ -1,0 +1,9 @@
+{
+  "scope": "AI-run checks of the exact publication staging source",
+  "tests": 24,
+  "failures": 0,
+  "errors": 0,
+  "all_pass": true,
+  "seconds": 1.854543459136039,
+  "python": "3.12.14"
+}

@@ -1,0 +1,29 @@
+{
+  "train_cutoff": "2020-06-29T00:00:00",
+  "validation_end": "2020-07-27T00:00:00",
+  "final_models_refit_on_validation": false,
+  "ground_truth": "top5 programme IDs by qualifying distinct airing frequency; ties by ID",
+  "coverage_threshold": 0.8,
+  "repeats_allowed": true,
+  "candidate_policy": "positive-ID airings whose START is within target period; sources0/1 for VAL, source2 for TEST; labels require fully contained airings",
+  "common_fallback": "TRAIN distinct-viewer popularity; cold users identical; fill remaining slots after positive model evidence",
+  "template_users": 1260,
+  "evaluated_users": 1216,
+  "excluded_no_validation_relevance": 44,
+  "cold_train_template_users": 13,
+  "cold_train_evaluated_users": 9,
+  "train_shape": [
+    4789,
+    9671
+  ],
+  "train_pairs": 169216,
+  "train_positive_airings": 461409,
+  "validation_positive_airings": 150304,
+  "training_observed_items": 3405,
+  "validation_top5_relevant_pairs": 5718,
+  "validation_top5_cold_item_pairs": 181,
+  "candidates": {
+    "val": 3957,
+    "test": 6632
+  }
+}

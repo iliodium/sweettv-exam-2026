@@ -1,0 +1,559 @@
+{
+  "predeclared_plan": {
+    "families": [
+      "history",
+      "ppr"
+    ],
+    "gamma": [
+      0.0,
+      0.5,
+      1.0
+    ],
+    "smoothing_train_airings": 4.0,
+    "ratio_clip": [
+      0.25,
+      4.0
+    ],
+    "new_settings": 4,
+    "gamma_zero_controls": 2,
+    "expected_val_candidates": 3957,
+    "expected_test_candidates": 6632,
+    "expected_evaluation_cohort": 1216,
+    "formula": "score * clip((target_count/target_days+s/train_days)/(train_count/train_days+s/train_days),.25,4)**gamma",
+    "selection": "same frozen temporal VAL MAP@5; never Kaggle score or TEST viewing",
+    "fitting": "none: read existing frozen TRAIN history/PPR score matrices",
+    "repeats": "allowed exactly as in main experiment"
+  },
+  "records": [
+    {
+      "key": "history_supply_g0_0",
+      "family": "history",
+      "base_key": "history_0",
+      "base_config": {
+        "method": "personal repeat-frequency baseline",
+        "half_life_days": null,
+        "repeat_policy": "allowed"
+      },
+      "gamma": 0.0,
+      "smoothing_train_airings": 4.0,
+      "ratio_clip": [
+        0.25,
+        4.0
+      ],
+      "map_at_5": 0.33118192616959063,
+      "precision_at_5": 0.38223684210526315,
+      "recall_at_5": 0.3987664473684211,
+      "evaluated_users": 1216,
+      "excluded_no_relevant": 44,
+      "delta_from_base_map": 0.0,
+      "fallback": {
+        "val": {
+          "users_needing_fallback": 57,
+          "fallback_slots": 175
+        },
+        "test": {
+          "users_needing_fallback": 49,
+          "fallback_slots": 158
+        }
+      },
+      "multiplier_summary": {
+        "val": {
+          "min_multiplier": 1.0,
+          "median_multiplier": 1.0,
+          "max_multiplier": 1.0
+        },
+        "test": {
+          "min_multiplier": 1.0,
+          "median_multiplier": 1.0,
+          "max_multiplier": 1.0
+        }
+      },
+      "seconds_adjust_and_rank": 0.19791337521746755,
+      "model_refit": false,
+      "submission_file": "history_supply_g0_0.csv",
+      "csv_validation": {
+        "valid": true,
+        "users": 1260,
+        "k": 5,
+        "ranked_items": 6300,
+        "candidate_items": 6632,
+        "distinct_recommended_items": 291,
+        "first_user": "8377619604347126107",
+        "last_user": "10906529691540756480",
+        "columns": [
+          "user_id",
+          "tv_show_id"
+        ],
+        "row_order_matches_sample": true,
+        "sha256": "f240ad35e832c8ac1fa5e3787daca59f1a7ff1fbe1147e859d7165ee765c6077",
+        "size_bytes": 76845
+      }
+    },
+    {
+      "key": "history_supply_g0_5",
+      "family": "history",
+      "base_key": "history_0",
+      "base_config": {
+        "method": "personal repeat-frequency baseline",
+        "half_life_days": null,
+        "repeat_policy": "allowed"
+      },
+      "gamma": 0.5,
+      "smoothing_train_airings": 4.0,
+      "ratio_clip": [
+        0.25,
+        4.0
+      ],
+      "map_at_5": 0.32757903874269007,
+      "precision_at_5": 0.3748355263157895,
+      "recall_at_5": 0.38959703947368424,
+      "evaluated_users": 1216,
+      "excluded_no_relevant": 44,
+      "delta_from_base_map": -0.0036028874269005695,
+      "fallback": {
+        "val": {
+          "users_needing_fallback": 57,
+          "fallback_slots": 175
+        },
+        "test": {
+          "users_needing_fallback": 49,
+          "fallback_slots": 158
+        }
+      },
+      "multiplier_summary": {
+        "val": {
+          "min_multiplier": 0.5,
+          "median_multiplier": 1.2909944487358056,
+          "max_multiplier": 2.0
+        },
+        "test": {
+          "min_multiplier": 0.5,
+          "median_multiplier": 1.1547005383792515,
+          "max_multiplier": 2.0
+        }
+      },
+      "seconds_adjust_and_rank": 0.15982095897197723,
+      "model_refit": false,
+      "submission_file": "history_supply_g0_5.csv",
+      "csv_validation": {
+        "valid": true,
+        "users": 1260,
+        "k": 5,
+        "ranked_items": 6300,
+        "candidate_items": 6632,
+        "distinct_recommended_items": 464,
+        "first_user": "8377619604347126107",
+        "last_user": "10906529691540756480",
+        "columns": [
+          "user_id",
+          "tv_show_id"
+        ],
+        "row_order_matches_sample": true,
+        "sha256": "f913eaac9c372e830a826c4699ea9187732dfd92c59a4d0902ada7ab20242583",
+        "size_bytes": 77506
+      }
+    },
+    {
+      "key": "history_supply_g1_0",
+      "family": "history",
+      "base_key": "history_0",
+      "base_config": {
+        "method": "personal repeat-frequency baseline",
+        "half_life_days": null,
+        "repeat_policy": "allowed"
+      },
+      "gamma": 1.0,
+      "smoothing_train_airings": 4.0,
+      "ratio_clip": [
+        0.25,
+        4.0
+      ],
+      "map_at_5": 0.3199981725146199,
+      "precision_at_5": 0.3680921052631579,
+      "recall_at_5": 0.38236019736842103,
+      "evaluated_users": 1216,
+      "excluded_no_relevant": 44,
+      "delta_from_base_map": -0.011183753654970707,
+      "fallback": {
+        "val": {
+          "users_needing_fallback": 57,
+          "fallback_slots": 175
+        },
+        "test": {
+          "users_needing_fallback": 49,
+          "fallback_slots": 158
+        }
+      },
+      "multiplier_summary": {
+        "val": {
+          "min_multiplier": 0.25,
+          "median_multiplier": 1.6666666666666665,
+          "max_multiplier": 4.0
+        },
+        "test": {
+          "min_multiplier": 0.25,
+          "median_multiplier": 1.3333333333333333,
+          "max_multiplier": 4.0
+        }
+      },
+      "seconds_adjust_and_rank": 0.1639187908731401,
+      "model_refit": false,
+      "submission_file": "history_supply_g1_0.csv",
+      "csv_validation": {
+        "valid": true,
+        "users": 1260,
+        "k": 5,
+        "ranked_items": 6300,
+        "candidate_items": 6632,
+        "distinct_recommended_items": 494,
+        "first_user": "8377619604347126107",
+        "last_user": "10906529691540756480",
+        "columns": [
+          "user_id",
+          "tv_show_id"
+        ],
+        "row_order_matches_sample": true,
+        "sha256": "b7eebab60b2a564ac1f08ca52313a6b487e1d10d03aa5e841cec3554a8548617",
+        "size_bytes": 77627
+      }
+    },
+    {
+      "key": "ppr_supply_g0_0",
+      "family": "ppr",
+      "base_key": "ppr_a0.5",
+      "base_config": {
+        "model": "programme_coview_ppr",
+        "alpha": 0.5,
+        "neighbors": 64,
+        "tol": 1e-06,
+        "max_iter": 300,
+        "graph_block_size": 128,
+        "score_batch_size": 128,
+        "restart_transform": "identity",
+        "graph_weights": "binary co-view weighted by inverse user degree and item cosine degree",
+        "dangling_policy": "return dangling mass to the same personal training restart"
+      },
+      "gamma": 0.0,
+      "smoothing_train_airings": 4.0,
+      "ratio_clip": [
+        0.25,
+        4.0
+      ],
+      "map_at_5": 0.33761810124269004,
+      "precision_at_5": 0.39013157894736844,
+      "recall_at_5": 0.4069353070175438,
+      "evaluated_users": 1216,
+      "excluded_no_relevant": 44,
+      "delta_from_base_map": 0.0,
+      "fallback": {
+        "val": {
+          "users_needing_fallback": 13,
+          "fallback_slots": 65
+        },
+        "test": {
+          "users_needing_fallback": 13,
+          "fallback_slots": 65
+        }
+      },
+      "multiplier_summary": {
+        "val": {
+          "min_multiplier": 1.0,
+          "median_multiplier": 1.0,
+          "max_multiplier": 1.0
+        },
+        "test": {
+          "min_multiplier": 1.0,
+          "median_multiplier": 1.0,
+          "max_multiplier": 1.0
+        }
+      },
+      "seconds_adjust_and_rank": 0.5889019593596458,
+      "model_refit": false,
+      "submission_file": "ppr_supply_g0_0.csv",
+      "csv_validation": {
+        "valid": true,
+        "users": 1260,
+        "k": 5,
+        "ranked_items": 6300,
+        "candidate_items": 6632,
+        "distinct_recommended_items": 309,
+        "first_user": "8377619604347126107",
+        "last_user": "10906529691540756480",
+        "columns": [
+          "user_id",
+          "tv_show_id"
+        ],
+        "row_order_matches_sample": true,
+        "sha256": "9a3dc03319e30285431b572d3e362b6d94356193a810896dc06b2774bd8c3b73",
+        "size_bytes": 77022
+      }
+    },
+    {
+      "key": "ppr_supply_g0_5",
+      "family": "ppr",
+      "base_key": "ppr_a0.5",
+      "base_config": {
+        "model": "programme_coview_ppr",
+        "alpha": 0.5,
+        "neighbors": 64,
+        "tol": 1e-06,
+        "max_iter": 300,
+        "graph_block_size": 128,
+        "score_batch_size": 128,
+        "restart_transform": "identity",
+        "graph_weights": "binary co-view weighted by inverse user degree and item cosine degree",
+        "dangling_policy": "return dangling mass to the same personal training restart"
+      },
+      "gamma": 0.5,
+      "smoothing_train_airings": 4.0,
+      "ratio_clip": [
+        0.25,
+        4.0
+      ],
+      "map_at_5": 0.3375324378654971,
+      "precision_at_5": 0.38651315789473684,
+      "recall_at_5": 0.40230263157894736,
+      "evaluated_users": 1216,
+      "excluded_no_relevant": 44,
+      "delta_from_base_map": -8.566337719295714e-05,
+      "fallback": {
+        "val": {
+          "users_needing_fallback": 13,
+          "fallback_slots": 65
+        },
+        "test": {
+          "users_needing_fallback": 13,
+          "fallback_slots": 65
+        }
+      },
+      "multiplier_summary": {
+        "val": {
+          "min_multiplier": 0.5,
+          "median_multiplier": 1.2909944487358056,
+          "max_multiplier": 2.0
+        },
+        "test": {
+          "min_multiplier": 0.5,
+          "median_multiplier": 1.1547005383792515,
+          "max_multiplier": 2.0
+        }
+      },
+      "seconds_adjust_and_rank": 0.5994523749686778,
+      "model_refit": false,
+      "submission_file": "ppr_supply_g0_5.csv",
+      "csv_validation": {
+        "valid": true,
+        "users": 1260,
+        "k": 5,
+        "ranked_items": 6300,
+        "candidate_items": 6632,
+        "distinct_recommended_items": 363,
+        "first_user": "8377619604347126107",
+        "last_user": "10906529691540756480",
+        "columns": [
+          "user_id",
+          "tv_show_id"
+        ],
+        "row_order_matches_sample": true,
+        "sha256": "cb06c98935286269feaa897b9d596a983443204fc4886e92948392926017496e",
+        "size_bytes": 77026
+      }
+    },
+    {
+      "key": "ppr_supply_g1_0",
+      "family": "ppr",
+      "base_key": "ppr_a0.5",
+      "base_config": {
+        "model": "programme_coview_ppr",
+        "alpha": 0.5,
+        "neighbors": 64,
+        "tol": 1e-06,
+        "max_iter": 300,
+        "graph_block_size": 128,
+        "score_batch_size": 128,
+        "restart_transform": "identity",
+        "graph_weights": "binary co-view weighted by inverse user degree and item cosine degree",
+        "dangling_policy": "return dangling mass to the same personal training restart"
+      },
+      "gamma": 1.0,
+      "smoothing_train_airings": 4.0,
+      "ratio_clip": [
+        0.25,
+        4.0
+      ],
+      "map_at_5": 0.32734900402046785,
+      "precision_at_5": 0.37664473684210525,
+      "recall_at_5": 0.39091282894736845,
+      "evaluated_users": 1216,
+      "excluded_no_relevant": 44,
+      "delta_from_base_map": -0.01026909722222219,
+      "fallback": {
+        "val": {
+          "users_needing_fallback": 13,
+          "fallback_slots": 65
+        },
+        "test": {
+          "users_needing_fallback": 13,
+          "fallback_slots": 65
+        }
+      },
+      "multiplier_summary": {
+        "val": {
+          "min_multiplier": 0.25,
+          "median_multiplier": 1.6666666666666665,
+          "max_multiplier": 4.0
+        },
+        "test": {
+          "min_multiplier": 0.25,
+          "median_multiplier": 1.3333333333333333,
+          "max_multiplier": 4.0
+        }
+      },
+      "seconds_adjust_and_rank": 0.6016969592310488,
+      "model_refit": false,
+      "submission_file": "ppr_supply_g1_0.csv",
+      "csv_validation": {
+        "valid": true,
+        "users": 1260,
+        "k": 5,
+        "ranked_items": 6300,
+        "candidate_items": 6632,
+        "distinct_recommended_items": 421,
+        "first_user": "8377619604347126107",
+        "last_user": "10906529691540756480",
+        "columns": [
+          "user_id",
+          "tv_show_id"
+        ],
+        "row_order_matches_sample": true,
+        "sha256": "7084648e83921bdd2b32804d7a50cf4579613b826599ba260c1393d2224196e0",
+        "size_bytes": 77155
+      }
+    }
+  ],
+  "validation_selected": {
+    "key": "ppr_supply_g0_0",
+    "family": "ppr",
+    "base_key": "ppr_a0.5",
+    "base_config": {
+      "model": "programme_coview_ppr",
+      "alpha": 0.5,
+      "neighbors": 64,
+      "tol": 1e-06,
+      "max_iter": 300,
+      "graph_block_size": 128,
+      "score_batch_size": 128,
+      "restart_transform": "identity",
+      "graph_weights": "binary co-view weighted by inverse user degree and item cosine degree",
+      "dangling_policy": "return dangling mass to the same personal training restart"
+    },
+    "gamma": 0.0,
+    "smoothing_train_airings": 4.0,
+    "ratio_clip": [
+      0.25,
+      4.0
+    ],
+    "map_at_5": 0.33761810124269004,
+    "precision_at_5": 0.39013157894736844,
+    "recall_at_5": 0.4069353070175438,
+    "evaluated_users": 1216,
+    "excluded_no_relevant": 44,
+    "delta_from_base_map": 0.0,
+    "fallback": {
+      "val": {
+        "users_needing_fallback": 13,
+        "fallback_slots": 65
+      },
+      "test": {
+        "users_needing_fallback": 13,
+        "fallback_slots": 65
+      }
+    },
+    "multiplier_summary": {
+      "val": {
+        "min_multiplier": 1.0,
+        "median_multiplier": 1.0,
+        "max_multiplier": 1.0
+      },
+      "test": {
+        "min_multiplier": 1.0,
+        "median_multiplier": 1.0,
+        "max_multiplier": 1.0
+      }
+    },
+    "seconds_adjust_and_rank": 0.5889019593596458,
+    "model_refit": false,
+    "submission_file": "ppr_supply_g0_0.csv",
+    "csv_validation": {
+      "valid": true,
+      "users": 1260,
+      "k": 5,
+      "ranked_items": 6300,
+      "candidate_items": 6632,
+      "distinct_recommended_items": 309,
+      "first_user": "8377619604347126107",
+      "last_user": "10906529691540756480",
+      "columns": [
+        "user_id",
+        "tv_show_id"
+      ],
+      "row_order_matches_sample": true,
+      "sha256": "9a3dc03319e30285431b572d3e362b6d94356193a810896dc06b2774bd8c3b73",
+      "size_bytes": 77022
+    }
+  },
+  "gamma_zero_guards": [
+    {
+      "family": "history",
+      "split": "val",
+      "exact_rankings_equal": true
+    },
+    {
+      "family": "history",
+      "split": "test",
+      "exact_rankings_equal": true
+    },
+    {
+      "family": "ppr",
+      "split": "val",
+      "exact_rankings_equal": true
+    },
+    {
+      "family": "ppr",
+      "split": "test",
+      "exact_rankings_equal": true
+    }
+  ],
+  "synthetic_guards": {
+    "passed": 6,
+    "failed": 0,
+    "scope": "AI-run synthetic formula guards"
+  },
+  "provenance": {
+    "train_source": "window_airings WHERE split='train'; DISTINCT airing_id",
+    "target_source": "airings; starts-in-window; VAL source_part<2, TEST source_part=2; no views",
+    "window_days": {
+      "train": 112.0,
+      "val": 28.0,
+      "test": 84.0
+    },
+    "train_airings": 187440,
+    "target_airings": {
+      "val": 49317,
+      "test": 144517
+    },
+    "supply_vector_sha256": {
+      "train": "e2d9669f533885fa57cc155c2db8eb83e6ce7577ed9598abc525c63217841b49",
+      "val": "93cfa7eea2d16ebca0e71d04a42b5d96a170594a237886d38a417dd596b089d8",
+      "test": "38db3e1bdb11c2e8d389f616586a6fb416167ad5e92d93971570bf262bb9135f"
+    },
+    "source_hashes": {
+      "artifacts/train_matrix.npz": "80715ccd28524c04915c191e90141c4b85a1a0a6e131d12945733d7d1909defc",
+      "artifacts/indices.json": "d3b8a70a63148fffeafa744c5f4224247640ddc5347bf65352ccbef5510fe37d",
+      "data/processed/candidates.json": "f3259e846d614c7a6b3ec2049219aea61630af502d0007a0fdd90c41ea2d0b9b",
+      "evidence/experiments.json": "ab6c2496899c20c7f4e3e71ea7e1dd77c5887a8729838b20856afef1338be3dd"
+    }
+  },
+  "evaluated_user_ids_sha256": "cf660bdffb3b52e96e70b43da01ffca23cf8b2fd800b6fb12beab117772e6a25",
+  "scope": "AI-run validation extension only; no TEST viewing, Kaggle score, model refit or online effect"
+}

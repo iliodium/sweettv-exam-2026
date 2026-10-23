@@ -1,0 +1,33 @@
+{
+  "final_model_key": "rrf_13",
+  "selection": "Highest common temporal validation MAP@5; also highest returned private score among two preselected uploads",
+  "competition": "sweettv-tv-program-recommender",
+  "kaggle_submission_ref": 57560936,
+  "status": "SubmissionStatus.COMPLETE",
+  "private_score": "0.38557",
+  "public_score": "0.40722",
+  "file": "final_submission.csv",
+  "csv_sha256": "35893801a866318f9888ee60e802729aaa48796a2c25cceeb2720eecca6f7c70",
+  "kaggle_uploaded_filename": "rrf_13.csv",
+  "description": "Даниил Синякин — iliodium | rrf_13 | train-only temporal validation",
+  "validation_map_at_5": 0.3483872441520468,
+  "validation_all1260_empty_zero_map": 0.33622134038800705,
+  "validation_evaluated_users": 1216,
+  "validation_excluded_empty_users": 44,
+  "total_output_users": 1260,
+  "config": {
+    "components": {
+      "history": "history_0",
+      "channel": "channel_schedule"
+    },
+    "weights": {
+      "history": 0.5,
+      "channel": 0.5
+    },
+    "rank_constant": 10,
+    "depth": 100
+  },
+  "models_refit_on_validation": false,
+  "source_experiment": "results/experiments.json",
+  "frozen_at_utc": "2026-10-23T13:02:29.777702+00:00"
+}
